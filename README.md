@@ -1,4 +1,4 @@
-# Calcular raízse de equações de segundo grau
+# Calcular raízes de equações de segundo grau
 ###  *arquivo em HTML*
 
 ## Inserir os valores de cada coeficiente no local solicitado.
