@@ -1,5 +1,6 @@
-# Calcular raíze de equações de segundo grau
-### arquivo em HTML 
+# Calcular raízse de equações de segundo grau
+###  *arquivo em HTML*
+<br/>
 ## Inserir os valores de cada coeficiente no local solicitado.
 ## Quando clicar no botão CALCULAR, logo abaixo será mostrado o resultado.
 
