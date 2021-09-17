@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULANDO RAÍZES</title>
+    <style>
+        body{
+            font: normal 12pt Comic;
+        }
+        input{
+            font: normal 12pt Comic;
+            width: 70px;
+        }
+        div#res{
+            font: italic 14pt Lucida;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CALCULANDO RAÍZES</h1>
+    <h2>Equação de segundo grau: ax² + bx + c = 0</h2>
+    <h3>Valor de a</h3> <input type="number" name="txtn1" id="txtn1">
+    <h3>Valor de b</h3> <input type="number" name="txtn2" id="txtn2">
+    <h3>Valor de c</h3> <input type="number" name="txtn3" id="txtn3">
+    <p>
+    <input type="button" value = "Calcular" onclick="calcular()">
+    <div id="res">Resultado</div>
+
+    <script>
+        function calcular(){
+            var tn1 =window.document.getElementById('txtn1')
+            var tn2 =window.document.getElementById('txtn2')
+            var tn3 =window.document.getElementById('txtn3')
+            var res =window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var n3 = Number(tn3.value)
+            var delta = ((n2**2) - (4 * n1 * n3))
+            if(delta < 0 ){
+                res.innerHTML = 'O delta tem valor negativo, o cálculo não pode prosseguir!'
+            }else if(n1 == 0){
+                res.innerHTML = 'Não existe devisão por 0 (zero), o cálculo não pode prosseguir!'
+            }else{
+                var raiz1 = (-(n2) + Math.sqrt(delta)) / (2*n1)
+                z1 = raiz1.toFixed(5)
+                var raiz2 = (-(n2) - Math.sqrt(delta)) / (2*n1)
+                z2 = raiz2.toFixed(5)
+                res.innerHTML = `As raízes são <strong>${z1}</strong> e <strong>${z2}</strong>`
+            } 
+            
+        }
+       
+    </script>
+    
+</body>
+</html>
