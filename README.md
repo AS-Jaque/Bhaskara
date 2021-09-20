@@ -1,5 +1,5 @@
 # Calcular raízes de equações de segundo grau
-###  *arquivo em HTML*
+###  *para executar o arquivo é necessário um browser*
 
 ## Inserir os valores de cada coeficiente no local solicitado.
 ## Quando clicar no botão CALCULAR, logo abaixo será mostrado o resultado.
